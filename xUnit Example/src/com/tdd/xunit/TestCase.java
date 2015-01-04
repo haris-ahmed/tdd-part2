@@ -11,7 +11,9 @@ public class TestCase {
 		this.name = name;
 	}
 	
-	public void run() {
+	public TestResult run() {
+		TestResult result = new TestResult();
+		result.testStarted();
 		this.setUp();
 		try {
 			Method method = this.getClass().getMethod(this.name, null);
@@ -20,6 +22,7 @@ public class TestCase {
 			e.printStackTrace();
 		}
 		this.tearDown();
+		return new TestResult();
 	}
 	
 	public void setUp() {

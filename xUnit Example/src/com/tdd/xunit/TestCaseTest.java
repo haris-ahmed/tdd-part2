@@ -32,4 +32,9 @@ public class TestCaseTest {
 		test.run();
 		System.out.print("setUp testMethod tearDown ".equals(test.log));
 	}
+	
+	public void testResut() {
+		TestResult result = test.run();
+		System.out.println("1 run, 0 failed".equals(result.summary()));
+	}
 }
