@@ -10,6 +10,7 @@ public class TestCaseTest {
 		t.testSetUp();
 		t.testRunning();
 		t.testTemplateMethod();
+		t.testResut();
 	}
 	
 	public void testWasRun() {
