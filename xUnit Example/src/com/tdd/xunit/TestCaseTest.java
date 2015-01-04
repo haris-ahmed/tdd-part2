@@ -38,4 +38,11 @@ public class TestCaseTest {
 		TestResult result = test.run();
 		System.out.println("1 run, 0 failed".equals(result.summary()));
 	}
+	
+	public void testResultFormatting() {
+		TestResult result = new TestResult();
+		result.testStarted();
+		result.testFailed();
+		System.out.println("1 run, 1 failed".equals(result.summary()));
+	}
 }
