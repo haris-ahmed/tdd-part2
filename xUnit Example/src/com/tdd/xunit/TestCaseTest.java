@@ -9,6 +9,7 @@ public class TestCaseTest {
 		t.testWasRun();
 		t.testSetUp();
 		t.testRunning();
+		t.testTemplateMethod();
 	}
 	
 	public void testWasRun() {
@@ -19,11 +20,16 @@ public class TestCaseTest {
 	
 	public void testSetUp() {
 		test.run();
-		System.out.println(test.wasSetUp);
+		System.out.println("setUp testMethod ".equals(test.log));
 	}
 	
 	public void testRunning() {
 		test.run();
 		System.out.println(test.wasRun);
+	}
+	
+	public void testTemplateMethod() {
+		test.run();
+		System.out.print("setUp testMethod tearDown ".equals(test.log));
 	}
 }

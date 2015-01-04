@@ -19,9 +19,14 @@ public class TestCase {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+		this.tearDown();
 	}
 	
 	public void setUp() {
+		
+	}
+	
+	public void tearDown() {
 		
 	}
 }
