@@ -22,7 +22,7 @@ public class TestCase {
 			e.printStackTrace();
 		}
 		this.tearDown();
-		return new TestResult();
+		return result;
 	}
 	
 	public void setUp() {
